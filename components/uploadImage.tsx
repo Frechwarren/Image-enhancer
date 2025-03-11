@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const UploadImage = () => {
-  // const [imagePreview, setImagePreview] = useState<string | null>();
+  const [imagePreview, setImagePreview] = useState<string | null>();
 
-  // const uploadPhoto = (file: File | null) => {
-  //   if (file) {
-  //     const reader = new FileReader();
-  //     reader.onloadend = () => {
-  //       setImagePreview(reader.result as string);
-  //     };
-  //     reader.readAsDataURL(file);
-  //   }
-  // };
+  const uploadPhoto = (file: File | null) => {
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -27,12 +27,12 @@ const UploadImage = () => {
             type="file"
             accept="image/*"
             className="absolute opacity-0 w-50 h-50 cursor-pointer"
-            // onChange={(e) => uploadPhoto(e.target.files?.[0] || null)}
+            onChange={(e) => uploadPhoto(e.target.files?.[0] || null)}
           />
-          {/* <img
+          <img
             src={imagePreview || undefined}
             className="flex w-full h-full object-contain"
-          /> */}
+          />
         </Button>
 
         <div className="border-2 border-dashed w-50 h-50"></div>

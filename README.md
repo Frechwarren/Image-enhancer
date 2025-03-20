@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Photo Enhancer
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+## About the Project
+
+Photo Enhancer is a web-based application that allows users to upload an image and apply sharpening filters to enhance its quality. The project leverages modern web technologies to provide a seamless and efficient user experience for image processing directly in the browser.
+
+### Features:
+- **Image Upload**: Users can upload images from their local device.
+- **Image Preview**: Displays the uploaded image for preview before enhancement.
+- **Image Sharpening**: Applies a sharpening filter to enhance the image quality using the `canvas` API.
+- **Real-time Processing**: All image processing is done locally in the browser without the need for external APIs.
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+1. **React**  
+   - A JavaScript library for building user interfaces. It is used to create the interactive components of the application.
+
+2. **TypeScript**  
+   - A strongly typed programming language that builds on JavaScript, providing better tooling and error checking.
+
+3. **Next.js**  
+   - A React framework for building server-rendered and statically generated web applications. It is used to structure the project and handle routing.
+
+4. **Tailwind CSS**  
+   - A utility-first CSS framework for styling the application. It provides pre-defined classes for rapid UI development.
+
+## How It Works
+
+1. **Upload an Image**: The user selects an image file from their local device.
+2. **Preview the Image**: The uploaded image is displayed in a preview area.
+3. **Enhance the Image**: A sharpening filter is applied to the image using the `canvas` API, enhancing its quality.
+4. **Download or View**: The enhanced image is displayed for the user to view or download.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/photo-enhancer.git
+   cd photo-enhancer
